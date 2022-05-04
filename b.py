@@ -2,26 +2,10 @@ from datetime import datetime
 
 import numpy as np
 from numpy import sin, cos, pi
+from utils import rotateY, rotateZ
 
 np.set_printoptions(suppress=True, precision=6)
 
-
-def rotateX(s):
-    return np.array([[1, 0, 0],
-                     [0, cos(s), -sin(s)],
-                     [0, sin(s), cos(s)]])
-
-
-def rotateY(s):
-    return np.array([[cos(s), 0, -sin(s)],
-                     [0, 1, 0],
-                     [sin(s), 0, cos(s)]])
-
-
-def rotateZ(s):
-    return np.array([[cos(s), -sin(s), 0],
-                     [sin(s), cos(s), 0],
-                     [0, 0, 1]])
 
 
 r = 1
